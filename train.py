@@ -8,7 +8,7 @@ from unet_model import UNet
 from data_preprocessing import BuildingDataset
 
 # 超参数设置
-epochs = 20
+epochs = 8
 batch_size = 8
 learning_rate = 0.01
 
@@ -56,4 +56,4 @@ for epoch in range(epochs):
     print(f"\nEpoch {epoch+1}/{epochs}, Loss: {epoch_loss:.4f}")
 
 # 保存模型
-torch.save(model.state_dict(), "unet_model.pth")
+torch.save(model.state_dict(), "unet_model2.pth")
